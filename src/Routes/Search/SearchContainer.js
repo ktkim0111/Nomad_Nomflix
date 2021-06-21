@@ -1,8 +1,8 @@
-import { moviesApi, tvApi } from "api";
 import React from "react";
+import { moviesApi, tvApi } from "api";
 import SearchPresenter from "./SearchPresenter";
 
-export default class extends React.Component {
+class SearchContainer extends React.Component {
   state = {
     movieResults: null,
     tvResults: null,
@@ -68,3 +68,5 @@ export default class extends React.Component {
     );
   }
 }
+
+export default SearchContainer;

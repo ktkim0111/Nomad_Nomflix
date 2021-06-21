@@ -1,8 +1,8 @@
-import { moviesApi, tvApi } from "api";
 import React from "react";
+import { moviesApi, tvApi } from "api";
 import DetailPresenter from "./DetailPresenter";
 
-export default class extends React.Component {
+class DetailContainer extends React.Component {
   constructor(props) {
     super(props);
     const {
@@ -22,7 +22,6 @@ export default class extends React.Component {
         params: { id },
       },
       history: { push },
-      location: { pathname },
     } = this.props;
     const { isMovie } = this.state;
     const parsedId = parseInt(id);
@@ -54,3 +53,5 @@ export default class extends React.Component {
     return <DetailPresenter result={result} error={error} loading={loading} />;
   }
 }
+
+export default DetailContainer;

@@ -12,7 +12,7 @@ import Detail from "Routes/Detail";
 
 import Header from "Components/Header";
 
-export default () => (
+const Router = () => (
   //Header를 Router 안에 넣은 이유 Header안에서 Router의 Link를 사용하기 위해
   <Router>
     <>
@@ -28,3 +28,5 @@ export default () => (
     </>
   </Router>
 );
+
+export default Router;
