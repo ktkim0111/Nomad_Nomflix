@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,7 +12,7 @@ import Detail from "Routes/Detail";
 
 import Header from "Components/Header";
 
-const Router = () => (
+const Routes = () => (
   //Header를 Router 안에 넣은 이유 Header안에서 Router의 Link를 사용하기 위해
   <Router>
     <>
@@ -29,4 +29,4 @@ const Router = () => (
   </Router>
 );
 
-export default Router;
+export default Routes;
