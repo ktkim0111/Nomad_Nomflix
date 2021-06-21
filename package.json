@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://ktkim0111.github.io/nomflix",
+  "homepage": "https://elastic-albattani-c4a6d1.netlify.app",
   "eslintConfig": {
     "extends": [
       "react-app",
